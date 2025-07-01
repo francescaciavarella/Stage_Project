@@ -1,0 +1,32 @@
+# Tabella Use Case
+
+| UC (Use Case) | Endpoint | URL (Esempio) | Descrizione Funzionalità |
+| :------------ | :------------------ | :------------------------------ | :----------------------- |
+| **UC01.01** | `/api/v1/companies` | `https://api.tua-scuola.it/api/v1/companies` | **Gestione Aziende**: Permette la creazione, visualizzazione dell'elenco, modifica e cancellazione delle aziende. Include dati base e collegamento a `Company_types`. |
+| **UC01.01** | `/api/v1/companies/{id}` | `https://api.tua-scuola.it/api/v1/companies/1` | **Dettagli Singola Azienda**: Ottenere, aggiornare o eliminare i dettagli di una specifica azienda tramite ID. |
+| **UC01.02** | `/api/v1/company-types` | `https://api.tua-scuola.it/api/v1/company-types` | **Gestione Tipi di Azienda**: Permette la creazione, visualizzazione dell'elenco, modifica e cancellazione dei tipi di azienda. |
+| **UC01.02** | `/api/v1/company-types/{id}` | `https://api.tua-scuola.it/api/v1/company-types/1` | **Dettagli Singolo Tipo di Azienda**: Ottenere, aggiornare o eliminare i dettagli di un singolo tipo di azienda tramite ID. |
+| **UC01.03** | `/api/v1/schedules` | `https://api.tua-scuola.it/api/v1/schedules` | **Gestione Calendari/Orari**: Permette la creazione, visualizzazione, modifica e cancellazione di calendari o orari, presumibilmente legati a interviste o altri eventi. |
+| **UC01.03** | `/api/v1/schedules/{id}` | `https://api.tua-scuola.it/api/v1/schedules/1` | **Dettagli Singolo Calendario/Orario**: Ottenere, aggiornare o eliminare i dettagli di un singolo calendario/orario tramite ID. |
+| **UC01.04** | `/api/v1/interviews` | `https://api.tua-scuola.it/api/v1/interviews` | **Gestione Colloqui**: Permette la creazione, visualizzazione, modifica e cancellazione dei colloqui. Collegato a studenti e aziende. |
+| **UC01.04** | `/api/v1/interviews/{id}` | `https://api.tua-scuola.it/api/v1/interviews/1` | **Dettagli Singolo Colloquio**: Ottenere, aggiornare o eliminare i dettagli di uno singolo colloquio tramite ID. |
+| **UC02.01** | `/api/v1/students` | `https://api.tua-scuola.it/api/v1/students` | **Gestione Studenti**: Permette la creazione, visualizzazione dell'elenco, modifica e cancellazione degli studenti. Include la loro anagrafica e gestione delle relazioni con classi, corsi e tirocini. |
+| **UC02.01** | `/api/v1/students/{id}` | `https://api.tua-scuola.it/api/v1/students/1` | **Dettagli Singolo Studente**: Ottenere, aggiornare o eliminare i dettagli di un singolo studente tramite ID. |
+| **UC03.01** | `/api/v1/classes` | `https://api.tua-scuola.it/api/v1/classes` | **Gestione Classi**: Permette la creazione, visualizzazione dell'elenco, modifica e cancellazione delle classi. |
+| **UC03.01** | `/api/v1/classes/{id}` | `https://api.tua-scuola.it/api/v1/classes/1` | **Dettagli Singola Classe**: Ottenere, aggiornare o eliminare i dettagli di una singola classe tramite ID. |
+| **UC03.02** | `/api/v1/courses` | `https://api.tua-scuola.it/api/v1/courses` | **Gestione Corsi**: Permette la creazione, visualizzazione dell'elenco, modifica e cancellazione dei corsi. |
+| **UC03.02** | `/api/v1/courses/{id}` | `https://api.tua-scuola.it/api/v1/courses/1` | **Dettagli Singolo Corso**: Ottenere, aggiornare o eliminare i dettagli di un singolo corso tramite ID. |
+| **UC04.01** | `/api/v1/professors` | `https://api.tua-scuola.it/api/v1/professors` | **Gestione Professori**: Permette la creazione, visualizzazione dell'elenco, modifica e cancellazione dei professori. |
+| **UC04.01** | `/api/v1/professors/{id}` | `https://api.tua-scuola.it/api/v1/professors/1` | **Dettagli Singolo Professore**: Ottenere, aggiornare o eliminare i dettagli di un singolo professore tramite ID. |
+| **UC05.01** | `/api/v1/internships` | `https://api.tua-scuola.it/api/v1/internships` | **Gestione Tirocini**: Permette la creazione, visualizzazione dell'elenco, modifica e cancellazione dei tirocini. Include dettagli come l'azienda ospitante, lo studente, il tutore e lo stato. |
+| **UC05.01** | `/api/v1/internships/{id}` | `https://api.tua-scuola.it/api/v1/internships/1` | **Dettagli Singolo Tirocinio**: Ottenere, aggiornare o eliminare i dettagli di un singolo tirocinio tramite ID. |
+| **UC06.01** | `/api/v1/tutors` | `https://api.tua-scuola.it/api/v1/tutors` | **Gestione Tutori**: Permette la creazione, visualizzazione dell'elenco, modifica e cancellazione dei tutori. |
+| **UC06.01** | `/api/v1/tutors/{id}` | `https://api.tua-scuola.it/api/v1/tutors/1` | **Dettagli Singolo Tutore**: Ottenere, aggiornare o eliminare i dettagli di un singolo tutore tramite ID. |
+| **UC07.01** | `/api/v1/users` | `https://api.tua-scuola.it/api/v1/users` | **Gestione Utenti**: Permette la creazione, visualizzazione dell'elenco, modifica e cancellazione degli utenti del sistema. |
+| **UC07.01** | `/api/v1/users/{id}` | `https://api.tua-scuola.it/api/v1/users/1` | **Dettagli Singolo Utente**: Ottenere, aggiornare o eliminare i dettagli di un singolo utente tramite ID. |
+| **UC08.01** | `/api/v1/history-status` | `https://api.tua-scuola.it/api/v1/history-status` | **Gestione Storico Stati**: Permette la gestione degli stati storici (es. per tirocini). Permetterebbe di definire e visualizzare i vari stati. |
+| **UC08.01** | `/api/v1/history-status/{id}` | `https://api.tua-scuola.it/api/v1/history-status/1` | **Dettagli Singolo Storico Stato**: Ottenere, aggiornare o eliminare un singolo record di storico stato tramite ID. |
+| **UC09.01** | `/api/v1/attendance-logs` | `https://api.tua-scuola.it/api/v1/attendance-logs` | **Gestione Log Presenze**: Permette la creazione, visualizzazione dell'elenco, modifica e cancellazione dei log di presenza, presumibilmente per i tirocini. |
+| **UC09.01** | `/api/v1/attendance-logs/{id}` | `https://api.tua-scuola.it/api/v1/attendance-logs/1` | **Dettagli Singolo Log Presenza**: Ottenere, aggiornare o eliminare un singolo log di presenza tramite ID. |
+| **UC10.01** | `/api/v1/conventions` | `https://api.tua-scuola.it/api/v1/conventions` | **Gestione Convenzioni**: Permette la creazione, visualizzazione dell'elenco, modifica e cancellazione delle convenzioni. |
+| **UC10.01** | `/api/v1/conventions/{id}` | `https://api.tua-scuola.it/api/v1/conventions/1` | **Dettagli Singola Convenzione**: Ottenere, aggiornare o eliminare i dettagli di una singola convenzione tramite ID. |
